@@ -1,17 +1,16 @@
 .App {
   text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
@@ -28,11 +27,61 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.containerv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
+
+ .video-container {
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  video {
+    width: 100%;
+  }
+
+  .input-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* input[type='file'] {
+    display: none;
+  } */
+
+  .custom-input-button {
+    /* cursor: pointer; */
+    padding: 10px 20px;
+    background-color: #601515;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+  }
+
+  .custom-input-buttonGo {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #168844;
+    color: #ffffff;
+    /* border: none; */
+    border-radius: 40px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+  }
+
+  .custom-input-button:hover {
+    background-color: #005dbb;
+  }

@@ -1,6 +1,10 @@
 import { useState } from 'react';
+
+
+
 import{ createFFmpeg, fetchFile } from '@ffmpeg/ffmpeg';
 import './App.css';
+
 
 const VideoCompressor = () => {
     const [videoSrc, setVideoSrc] = useState("");
@@ -37,20 +41,20 @@ const VideoCompressor = () => {
     };
   
     return (
-      <div>
-        <h2>Video Compressor</h2>
+      <div className="containerv">
+        <h2 >Video Compressor</h2>
         <input type="file" accept="video/*" onChange={handleChangeVideo} />
         {videoSrc && (
           <div style={{ width: '100%', overflowX: 'auto' }}>
             <video src={videoSrc} controls style={{ width: '100%' }} />
-            <button onClick={compressVideo}>Compress Video</button>
+            <button onClick={compressVideo} style={buttonStyle}>Compress Video</button>
           </div>
         )}
         {compressedVideoUrl && (
           <div>
             <h3>Compressed Video</h3>
             <video src={compressedVideoUrl} controls />
-            <a href={compressedVideoUrl} download="compressed_video.mp4">Download Compressed Video</a>
+            <a href={compressedVideoUrl} download="compressed_video.mp4" >Download Compressed Video</a>
           </div>
         )}
       </div>
@@ -59,4 +63,25 @@ const VideoCompressor = () => {
   
   
   export default VideoCompressor;
+  
+  const buttonStyle = {
+    backgroundColor: '#007BFF',
+    color: '#fff',
+    padding: '10px 20px',
+    border: 'none',
+    borderRadius: '5px',
+    cursor: 'pointer',
+    marginTop: '10px',
+  };
+  
+  // CSS styles for the heading
+  const headingStyle = {
+    color: 'white',
+    backgroundColor: 'linear-gradient(45deg, #ff4d4d, #00bfff)', // You can choose your preferred gradient colors here
+    padding: '10px 20px',
+    borderRadius: '10px',
+    textAlign: 'center',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Add a subtle box shadow for a 3D effect
+  };
+  
   
