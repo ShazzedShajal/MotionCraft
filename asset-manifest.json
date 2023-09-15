@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/MotionCraft/static/css/main.fdf47d4d.css",
+    "main.js": "/MotionCraft/static/js/main.a3555084.js",
+    "static/js/787.2f2cb3c5.chunk.js": "/MotionCraft/static/js/787.2f2cb3c5.chunk.js",
+    "index.html": "/MotionCraft/index.html",
+    "main.fdf47d4d.css.map": "/MotionCraft/static/css/main.fdf47d4d.css.map",
+    "main.a3555084.js.map": "/MotionCraft/static/js/main.a3555084.js.map",
+    "787.2f2cb3c5.chunk.js.map": "/MotionCraft/static/js/787.2f2cb3c5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fdf47d4d.css",
+    "static/js/main.a3555084.js"
+  ]
+}
